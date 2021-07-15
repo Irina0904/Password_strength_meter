@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>HTML Head Tag </title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+</head>
+ 
+<body>
+    <!--<img id="security" src="images/Mobile login-pana.png" alt="security">-->
+    <h3 id="title">Welcome to PasswordMeter!</h3>
+   
+    <form action="thankyou.html" class="form_center">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Your username" required><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" placeholder="Your password" required onkeyup="isGoodValue()"><br>
+        <label for="file" id="passwordStrengthLabel">Password strength: weak</label>
+        <div class="w3-light-grey w3-round-xlarge">
+            <div id="passwordBar"class="w3-container w3-red w3-round-xlarge" style="height:10px;width:15%"></div>
+          </div><br>
+          <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            A secure password:<br><br>
+              <span id="pwLength">&#10008 Is at least 8 characters</span><br>
+              <span id="pwCase">&#10008 Contains both lower and uppercase letters</span><br>
+              <span id="pwDigit">&#10008 Has numbers</span><br>
+              <span id="pwSpecialChar">&#10008 Has special characters such as %_# e.t.c</span> <br>
+          </div>
+          <input type="submit" value="Create account" id="submitButton" disabled>
+        </form>
+    <script src="app.js"></script>
+</body>
+<footer>
+    <p id="author">Author: Irina Levkovets<br>
+    <a href="https://storyset.com/mobile">Mobile illustrations by Storyset</a></p>
+</footer>
+ 
+</html>
